@@ -143,4 +143,34 @@ li.done span {
   opacity: 0.7;
   font-style: italic;
 }
+#compteurContainer {
+  margin-top: 25px;
+  padding: 12px 20px;
+  width: fit-content;
 
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(6px);
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+
+  font-size: 16px;
+  font-weight: 600;
+  color: #6d3fa6;
+  letter-spacing: 0.5px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  animation: fadeUp 0.6s ease both;
+}
+
+#compteur {
+  background: linear-gradient(135deg, #b57ce2, #8e4cc4);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 15px;
+  box-shadow: 0 3px 10px rgba(136, 69, 171, 0.25);
+}
