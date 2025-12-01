@@ -1,7 +1,8 @@
 
 ## 👥 Composition de l’équipe
 ### Developers (3)
-- Safa Elgharras
+- Safa Elgharras: CSS/done 
+   
 - Soukayna Assila
 - Ismail Founti
 
