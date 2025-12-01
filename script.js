@@ -2,6 +2,7 @@
 let input = document.getElementById("inputTache");
 let liste = document.getElementById("liste");
 let ajouterBouton = document.getElementById("ajouter");
+let compteur = document.getElementById("compteur"); // new
 
 
 window.addEventListener('load', () => {
@@ -9,6 +10,7 @@ window.addEventListener('load', () => {
  tachesEnregistrées.forEach(t => {
     ajouterTache(t.texte, t.terminee);
   });
+  mettreAJourCompteur(); // new
 });
 
 ajouterBouton.addEventListener('click', () => {
@@ -67,4 +69,11 @@ function sauvegarderTaches() {
    toutLesTaches.push({ texte, terminee });
   });
   localStorage.setItem('taches', JSON.stringify(toutLesTaches));
+  mettreAJourCompteur(); // new
+}
+
+function mettreAJourCompteur() {
+  if (!compteur) return;
+  let nbTerminees = document.querySelectorAll('#liste li input[type="checkbox"]:checked').length;
+  compteur.innerText = nbTerminees;
 }
