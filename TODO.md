@@ -1,19 +1,19 @@
 
 ## 👥 Composition de l’équipe
 ### Developers (3)
-- Safa Elgharras: CSS/done 
-- Soukayna Assila: HTML/done
-- Ismail Founti: JS/done
- 
+- Safa Elgharras: CSS/done || Refine responsive design for mobile and tablet views
+- Soukayna Assila: HTML/done || Improve visual hierarchy using spacing and typography
+- Ismail Founti: JS/done || Add confirmation prompt before deleting a task
+
 ### Testeurs (3)
-- Oumaima mahfoud
-- Mohamed boukaya
-- Walid Ait Tazount
+- Oumaima mahfoud : Validate UI responsiveness on various screen sizes
+- Mohamed boukaya : Test new JS features (editing, filtering, confirmation)
+- Walid Ait Tazount : Document feedback and test final products and suggest improvements
 
 ### Scrum Masters (2)
-- Omar Mottalie
-- Insaf El guerguar
+- Omar Mottalie : Coordinate improvement sprint and track progress
+- Insaf El guerguar : Update `todo.md` daily with progress
 
 ### Product Owners (2)
-- Basma Trid
-- Mohamed Aghbalou
+- Basma Trid : Approve UI/UX enhancements
+- Mohamed Aghbalou : Finalize app for presentation and deployment
