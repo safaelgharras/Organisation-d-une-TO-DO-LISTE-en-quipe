@@ -1,9 +1,9 @@
 
 ## 👥 Composition de l’équipe
 ### Developers (3)
-- Safa Elgharras
-- Soukayna Assila
-- Ismail Founti
+- Safa Elgharras (css)
+- Soukayna Assila (html)
+- Ismail Founti (js)
 
 ### Testeurs (3)
 - Oumaima mahfoud
