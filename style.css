@@ -1,106 +1,140 @@
-
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: #f6f2fa;
-  color: #3a2e4c;
+  font-family:'Courier New', Courier, monospace, sans-serif;
+  background: linear-gradient(135deg, #f7f1ff, #e7d9f5);
+  color: #2f2340;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   min-height: 100vh;
-  padding-top: 60px;
-  border: 8px solid #8f4bb3;
+  padding-top: 80px;
   background-image: url(flowers.jpg);
-  background-repeat: no-repeat;
   background-size: cover;
-
+  background-repeat: no-repeat;
+  backdrop-filter: blur(5px);
 }
 
 
 h1 {
-  font-size: 2rem;
-  color: #4c2b63;
-  margin-bottom: 25px;
-  margin-top: 20% ;
+  font-size: 2.4rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #7a3abf, #b474db);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 30px;
+  margin-top: 20%;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  animation: fadeDown 0.8s ease-out both;
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 
 #inputTache {
-  width: 230px;
-  padding: 10px;
-  border: 2px solid #c8a2d8;
-  border-radius: 8px;
+  width: 260px;
+  padding: 12px;
+  border: 2px solid rgba(164, 123, 191, 0.3);
+  border-radius: 12px;
   outline: none;
-  font-size: 14px;
-  margin-right: 8px;
+  font-size: 15px;
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(6px);
+  transition: 0.3s ease;
 }
 
+#inputTache:focus {
+  border-color: #a56cc1;
+  box-shadow: 0 0 12px rgba(165,108,193,0.4);
+}
+
+
 #ajouter {
-  background-color: #a56cc1;
+  background: linear-gradient(135deg, #b57ce2, #8e4cc4);
   border: none;
   color: white;
-  padding: 10px 15px;
-  border-radius: 8px;
+  padding: 11px 18px;
+  border-radius: 12px;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(136, 69, 171, 0.25);
+  transition: 0.3s ease;
 }
 
 #ajouter:hover {
-  background-color: #8f4bb3;
+  background: linear-gradient(135deg, #9d5fca, #7a39b3);
+  box-shadow: 0 6px 15px rgba(136, 69, 171, 0.35);
+  transform: translateY(-2px);
 }
 
-
-
-
-
+/* --- LISTE --- */
 ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
-  margin-top: 25px;
-  width: 320px;
+  margin-top: 30px;
+  width: 340px;
+  animation: fadeUp 0.6s ease both;
 }
 
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
+/* --- LIST ITEMS --- */
 li {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
-  margin-bottom: 10px;
-  padding: 10px;
+  background: rgba(255,255,255,0.85);
+  border-radius: 14px;
+  box-shadow: 0px 4px 18px rgba(0,0,0,0.12);
+  margin-bottom: 12px;
+  padding: 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  backdrop-filter: blur(6px);
+  transition: 0.25s ease;
 }
 
+li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.18);
+}
 
+/* Text */
 li span {
   flex: 1;
-  min-width: 0;
-  margin-left: 10px;
-  margin-right: 10px;
-  display: inline-block;
+  margin: 0 12px;
   white-space: normal;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  color: #3a2e4c;
+  font-size: 15px;
 }
 
-
+/* --- BUTTONS INSIDE LI --- */
 li button {
-  background-color: #a56cc1;
+  background: linear-gradient(135deg, #c28deb, #9b60d2);
   color: white;
   border: none;
-  padding: 6px 10px;
-  border-radius: 6px;
+  padding: 6px 12px;
+  border-radius: 8px;
   cursor: pointer;
+  font-size: 13px;
+  transition: 0.3s ease;
 }
 
 li button:hover {
-  background-color: #8f4bb3;
+  background: linear-gradient(135deg, #a871cf, #834bb7);
+  transform: scale(1.07);
 }
 
-
+/* --- WHEN TASK IS DONE --- */
 li.done span {
   text-decoration: line-through;
-  color: gray;
+  color: #8a8a8a;
   opacity: 0.7;
+  font-style: italic;
 }
