@@ -4,7 +4,7 @@
 - Safa Elgharras: CSS/done 
    
 - Soukayna Assila
-- Ismail Founti
+- Ismail Founti: JS/done
 
 ### Testeurs (3)
 - Oumaima mahfoud
